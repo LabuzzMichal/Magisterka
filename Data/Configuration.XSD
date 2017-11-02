@@ -1,0 +1,453 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Configuration">
+	<xs:complexType>
+	  <xs:sequence>
+		<xs:element name="Paths">
+		  <xs:complexType>
+			<xs:sequence>
+			  <xs:element name="Dir">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirData">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataDB">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataLogs">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataLogsErrors">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataLogsClassifier">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataLogsAnalize">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataLogsEquations">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataSensorsNewData">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataSensorsPreprocess">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirDataProjectedSensors">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirFig">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirFigSensors">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DirFigProjectedSensors">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+		<xs:element name="SensorsSettings">
+		  <xs:complexType>
+			<xs:sequence>
+			  <xs:element name="SensorsCount">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:byte">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="LastMeasurementsNumber">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:byte">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="TrainUsingLastNMeasurements">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:byte">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="TrainUsingLastNFake">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:byte">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+		<xs:element name="ProjectSettings">
+		  <xs:complexType>
+			<xs:sequence>
+			  <xs:element name="DebugMode">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+		<xs:element name="KNNSettings">
+		  <xs:complexType>
+			<xs:sequence>
+			  <xs:element name="n_neighbors">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:byte">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="weights">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="algorithm">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="metric">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+		<xs:element name="MainSettings">
+		  <xs:complexType>
+			<xs:sequence>
+			  <xs:element name="CreateDB">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="UpdateDBWithNewData">
+				<xs:complexType>
+				  <xs:simpleContent>
+					<xs:extension base="xs:string">
+					  <xs:attribute type="xs:string" name="Type"/>
+					</xs:extension>
+				  </xs:simpleContent>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DrawCharts">
+				<xs:complexType>
+				  <xs:sequence>
+					<xs:element name="timefrom">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+					<xs:element name="timeto">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+				  </xs:sequence>
+				  <xs:attribute type="xs:string" name="Value"/>
+				  <xs:attribute type="xs:string" name="ValueType"/>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="DrawProjectedCharts">
+				<xs:complexType>
+				  <xs:sequence>
+					<xs:element name="timefrom">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+					<xs:element name="timeto">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+				  </xs:sequence>
+				  <xs:attribute type="xs:string" name="Value"/>
+				  <xs:attribute type="xs:string" name="ValueType"/>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="Analyze">
+				<xs:complexType>
+				  <xs:sequence>
+					<xs:element name="timefrom">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+					<xs:element name="timeto">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+				  </xs:sequence>
+				  <xs:attribute type="xs:string" name="Value"/>
+				  <xs:attribute type="xs:string" name="ValueType"/>
+				</xs:complexType>
+			  </xs:element>
+			  <xs:element name="Classifier">
+				<xs:complexType>
+				  <xs:sequence>
+					<xs:element name="timefrom">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+					<xs:element name="timeto">
+					  <xs:complexType>
+						<xs:simpleContent>
+						  <xs:extension base="xs:string">
+							<xs:attribute type="xs:string" name="Type"/>
+						  </xs:extension>
+						</xs:simpleContent>
+					  </xs:complexType>
+					</xs:element>
+					<xs:element name="GenerateFakeData">
+					  <xs:complexType>
+						<xs:sequence>
+						  <xs:element name="Samples">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:byte">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						  <xs:element name="minimumvalue">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:float">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						  <xs:element name="maximumvalue">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:float">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="Value"/>
+						<xs:attribute type="xs:string" name="ValueType"/>
+					  </xs:complexType>
+					</xs:element>
+					<xs:element name="Parameters">
+					  <xs:complexType>
+						<xs:sequence>
+						  <xs:element name="mean">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:string">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						  <xs:element name="rms">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:string">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						  <xs:element name="skewness">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:string">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						  <xs:element name="curtosis">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:string">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						  <xs:element name="time">
+							<xs:complexType>
+							  <xs:simpleContent>
+								<xs:extension base="xs:string">
+								  <xs:attribute type="xs:string" name="Type"/>
+								</xs:extension>
+							  </xs:simpleContent>
+							</xs:complexType>
+						  </xs:element>
+						</xs:sequence>
+					  </xs:complexType>
+					</xs:element>
+				  </xs:sequence>
+				  <xs:attribute type="xs:string" name="Value"/>
+				  <xs:attribute type="xs:string" name="ValueType"/>
+				</xs:complexType>
+			  </xs:element>
+			</xs:sequence>
+		  </xs:complexType>
+		</xs:element>
+	  </xs:sequence>
+	</xs:complexType>
+  </xs:element>
+</xs:schema>

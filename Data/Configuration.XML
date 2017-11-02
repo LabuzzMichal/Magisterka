@@ -1,0 +1,65 @@
+<Configuration>
+    <Paths>
+		<Dir Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\</Dir>
+		<DirData Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\</DirData>
+		<DirDataDB Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\SENSORS.db</DirDataDB>
+		<DirDataLogs Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Logs\\</DirDataLogs>
+		<DirDataLogsErrors Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Logs\\Errors\\</DirDataLogsErrors>
+		<DirDataLogsClassifier Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Logs\\Classifier\\</DirDataLogsClassifier>
+		<DirDataLogsAnalize Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Logs\\Analize\\</DirDataLogsAnalize>
+		<DirDataLogsEquations Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Logs\\equations.xml</DirDataLogsEquations>
+		<DirDataSensorsNewData Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Sensors_newdata\\</DirDataSensorsNewData>
+		<DirDataSensorsPreprocess Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Sensors_preprocess\\</DirDataSensorsPreprocess>
+		<DirDataProjectedSensors Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Data\\Sensors_projected\\</DirDataProjectedSensors>
+		<DirFig Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Fig\\</DirFig>
+		<DirFigSensors Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Fig\\Sensors\\</DirFigSensors>
+		<DirFigProjectedSensors Type="str">C:\\Users\\Michal\\Documents\\Visual Studio 2015\\Projects\\Magisterka\\Magisterka\\Fig\\Sensors_projected\\</DirFigProjectedSensors> 
+    </Paths>
+	<SensorsSettings>
+		<SensorsCount Type="int">84</SensorsCount>
+		<LastMeasurementsNumber Type="int">10</LastMeasurementsNumber>
+		<TrainUsingLastNMeasurements Type="int">50</TrainUsingLastNMeasurements>
+		<TrainUsingLastNFake Type="int">50</TrainUsingLastNFake>
+	</SensorsSettings>
+	<ProjectSettings>
+		<DebugMode Type="bool">False</DebugMode>
+	</ProjectSettings>
+	<KNNSettings>
+		<n_neighbors Type="int">3</n_neighbors>
+		<weights Type="str">distance</weights>
+		<algorithm Type="str">auto</algorithm>
+		<metric Type="str">minkowski</metric>
+	</KNNSettings>
+	<MainSettings>
+		<CreateDB Type="bool">False</CreateDB>
+		<UpdateDBWithNewData Type="bool">True</UpdateDBWithNewData>
+		<DrawCharts Value="True" ValueType="bool">
+			<timefrom Type="datetime">None</timefrom>
+			<timeto Type="datetime">None</timeto>
+		</DrawCharts>
+		<DrawProjectedCharts Value="True" ValueType="bool">
+			<timefrom Type="datetime">None</timefrom>
+			<timeto Type="datetime">None</timeto>
+		</DrawProjectedCharts>	  
+		<Analyze Value="True" ValueType="bool">
+			<timefrom Type="datetime">None</timefrom>
+			<timeto Type="datetime">None</timeto>
+		</Analyze>
+		<Classifier Value="True" ValueType="bool">
+			<timefrom Type="datetime">None</timefrom>
+			<timeto Type="datetime">None</timeto>
+			<GenerateFakeData Value="True" ValueType="bool">
+				<Samples Type="int">50</Samples>
+				<minimumvalue Type="float">1.5</minimumvalue>
+				<maximumvalue Type="float">2.0</maximumvalue>
+			</GenerateFakeData>
+			<Parameters>
+				<mean Type="bool">True</mean>
+				<rms Type="bool">True</rms>
+				<skewness Type="bool">True</skewness>
+				<curtosis Type="bool">True</curtosis>
+				<time Type="bool">True</time>
+			</Parameters>
+		</Classifier>
+	</MainSettings>	
+</Configuration>

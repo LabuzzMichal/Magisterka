@@ -1,0 +1,10 @@
+#!/bin/bash
+
+FILES=$(find /home/mlabuz/Desktop/Projekt/Data/180000s/180000s -type f -name '*NZS.root')
+rm list.txt
+touch list.txt
+chmod 777 list.txt
+for f in $FILES
+do
+ echo "$f" >> list.txt
+done
